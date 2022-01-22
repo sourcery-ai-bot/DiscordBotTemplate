@@ -20,26 +20,9 @@ class emojis:
     warning = "<:warning:889206830637666334>"
 
 
-class channels:
-
-    draft = 934365215418613850
-
-    approved = 934497235457159249
-
-    rejected = 934497248639860756
-
-
-class roles:
-
-    manager = 934364196953530378
-
-    approver = 934364031962189824
-
-
 class internal:
 
     modules_to_not_load = []
 
 
-sboard = SuggestionBoard("./jsondb/suggestions.json")
 db = JSONx("./jsondb/db.json")
