@@ -1,2 +1,2 @@
-# DiscordBotTemplate
-template
+# APLManager
+bot
