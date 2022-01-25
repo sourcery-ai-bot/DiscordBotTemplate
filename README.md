@@ -1,2 +1,2 @@
-# APLManager
-bot
+# TEMPLATE  
+yes 
