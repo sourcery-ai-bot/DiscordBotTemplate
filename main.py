@@ -51,6 +51,7 @@ async def module(ctx):
 @module.command()
 @commands.is_owner()
 async def reload(ctx, module: str):
+    await ctx.channel.trigger_typing()
     for file_path in Path("./modules").glob("**/*.py"):
         file_path = str(file_path).replace("/", ".")[:-3]
         file_name = file_path.split(".")[-1]
@@ -71,6 +72,7 @@ async def reload(ctx, module: str):
 @module.command()
 @commands.is_owner()
 async def load(ctx, module: str):
+    await ctx.channel.trigger_typing()
     for file_path in Path("./modules").glob("**/*.py"):
         file_path = str(file_path).replace("/", ".")[:-3]
         file_name = file_path.split(".")[-1]
@@ -91,6 +93,7 @@ async def load(ctx, module: str):
 @module.command()
 @commands.is_owner()
 async def unload(ctx, module: str):
+    await ctx.channel.trigger_typing()
     for file_path in Path("./modules").glob("**/*.py"):
         file_path = str(file_path).replace("/", ".")[:-3]
         file_name = file_path.split(".")[-1]
