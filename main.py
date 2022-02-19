@@ -44,8 +44,7 @@ async def on_ready():
 
 @bot.group()
 async def module(ctx):
-    if ctx.invoked_subcommand is None:
-        pass
+    pass
 
 
 @module.command()
